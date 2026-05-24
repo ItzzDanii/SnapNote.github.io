@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 1s ease;
+}
+
+body {
+    background-image: url('img/orig_big.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    image-rendering: pixelated;
+}
+
+.background-black {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.container {
+    background-color: rgba(43, 23, 64, 0.85);
+    border: 4px solid #ff79b0;
+    padding: 40px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.title h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 18px;
+    color: #e64ba5;
+    text-shadow: 3px 3px 0px #670c74b4;
+
+
+    background-image: url('img/Title-Bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+
+
+    padding: 20px 30px;
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 15px;
+}
+
+.title p {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    line-height: 1.6;
+    background-color: #4a285a;
+    color: #ffb1de;
+    padding: 15px;
+    width: 100%;
+    border: 2px solid #ff79b0;
+}
+
+
+.btn {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    display: inline-block;
+    text-decoration: none;
+    color: #2b1740;
+    background-color: #ffb1de;
+    padding: 15px 30px;
+    border-bottom: 4px solid #ff79b0;
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #ac1252;
+    color: white;
+    transform: translateY(-2px);
+}
+
+i{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 24px;
+    color: #ff79b0;
+}
+
+i:hover {
+    color: #ffb1de;
+    transform: translate(-2px, -2px);
+    cursor: pointer;
+}
