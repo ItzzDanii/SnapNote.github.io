@@ -1,0 +1,53 @@
+*{
+    transition: 0.2s;
+}
+
+.list-container {
+    display: flex;
+    margin: 15% 50px;
+    height: 500px;
+    background-color: beige;
+    font-size: 1.5rem;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+
+.name-list {
+    position: relative;
+    background-color: aliceblue;
+    width: 15%;
+    text-align: center;
+}
+
+.name-list ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.name-list ul li{
+    border: 2px solid black;
+    border-right: 4px solid black;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name-list ul li:hover{
+    scale: 1.02;
+    cursor: pointer;
+}
+
+.item-list{
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.item-list ul li{
+    margin: 120px 0;
+}
