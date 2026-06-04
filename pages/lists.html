@@ -7,6 +7,7 @@
     <title>SnapNote</title>
     <link rel="stylesheet" href="/pages/list_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
 </head>
 
 <body onload="listsPresenti()">
@@ -18,6 +19,8 @@
 
         <button id="btn-addList" onclick="addList()">Aggiungi Lista</button>
         <button id="btn-home" onclick="window.location.href='/home.html'">Torna alla Home</button>
+        <br>
+        <label id="lblNumElenchi">Numero Elenchi: 0</label>
 
         <div id="elenchi-container">
             <div id="names-container">
@@ -32,6 +35,10 @@
                 </ul>
             </div>
         </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 SnapNote. Tutti i diritti riservati.</p>
     </div>
 </body>
 <script src="/script.js"></script>

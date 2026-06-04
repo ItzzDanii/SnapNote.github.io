@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-family: 'Press Start 2P', cursive;
+    
 }
 
 .background-black {
@@ -30,6 +32,7 @@ body {
 }
 
 h1 {
+    font-family: 'Press Start 2P', cursive;
     text-align: center;
     font-size: 2.2rem;
     font-weight: 800;
@@ -37,10 +40,11 @@ h1 {
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 2px;
-    text-shadow: 3px 3px 0px #3b5998;
+    text-shadow: 5px 5px 0px #003097;
 }
 
 label {
+    font-family: sans-serif;
     font-size: 1rem;
     font-weight: 700;
     color: #ffffff;
@@ -52,6 +56,7 @@ label {
 }
 
 #txtNomeList {
+    font-family: sans-serif;
     padding: 12px 16px;
     border: 3px solid #ffffff;
     font-size: 1rem;
@@ -65,6 +70,7 @@ label {
 }
 
 button {
+    font-family: sans-serif;
     padding: 12px 24px;
     border: 3px solid #ffffff;
     font-size: 1rem;
@@ -111,6 +117,10 @@ button:active {
 
 #btn-addList {
     margin-right: 14px;
+}
+
+ul li{
+    font-family: sans-serif;
 }
 
 #elenchi-container {
@@ -165,9 +175,9 @@ button:active {
 }
 
 #items-container h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 800;
-    margin-bottom: -10px;
+    margin-top: 30px;
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -219,16 +229,33 @@ button:active {
 }
 
 #items-container ul {
-    list-style: none;
+    list-style:inside;
 }
 
 #items-container ul li {
     padding: 14px 20px;
     background-color: rgba(255, 255, 255, 0.9);
-    border: 2px solid #ffffff;
-    margin-bottom: 10px;
+    border: 2px solid #000000;
+    box-shadow: 2px 2px 0px rgba(0, 0, 0);
+    width:550px;
+    margin-bottom: 12px;
     font-size: 1.05rem;
     font-weight: 600;
-    color: #2d3748;
+    text-transform:uppercase;
 }
 
+#items-container ul li:hover{
+    cursor:pointer;
+    scale:1.02;
+    transform: translate(-2px, -2px);
+}
+
+.footer {
+    position: absolute;
+    top: 165vh;
+    right: 20px;
+    font-size: 0.7rem;
+    color: #0c8ffa;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+}

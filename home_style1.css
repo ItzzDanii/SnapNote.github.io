@@ -113,3 +113,14 @@ i:hover {
     transform: translate(-2px, -2px);
     cursor: pointer;
 }
+
+.footer{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+}
