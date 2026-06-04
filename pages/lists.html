@@ -6,29 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SnapNote</title>
     <link rel="stylesheet" href="/pages/list_style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
 
-<body>
+<body onload="listsPresenti()">
     <div class="background-black"></div>
-    <h1></h1>
-    <div class="list-container">
-        <div class="name-list">
-            <ul>
-                <li>List 1</li>
-                <li>List 2</li>
-                <li>List 3</li>
-            </ul>
-        </div>
+    <div id="contenuto">
+        <h1>Elenchi</h1>
+        <label>Inserisci nome della lista:</label>
+        <input type="text" id="txtNomeList" placeholder="Nome della lista (max.18)">
 
-        <div class="item-list">
-            <ul>
-                <li>Object 1</li>
-                <li>Object 2</li>
-                <li>Object 3</li>
-            </ul>
+        <button id="btn-addList" onclick="addList()">Aggiungi Lista</button>
+        <button id="btn-home" onclick="window.location.href='/home.html'">Torna alla Home</button>
+
+        <div id="elenchi-container">
+            <div id="names-container">
+                <ul>
+
+                </ul>
+            </div>
+
+            <div id="items-container">
+                <ul>
+
+                </ul>
+            </div>
         </div>
     </div>
 </body>
-<script src="script.js"></script>
+<script src="/script.js"></script>
 
 </html>
